@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "ELMSリロード拡張機能",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "セッション切れのELMSページをリロードしログインします",
+        "description": "Description of what the extension does."
+    }
+}

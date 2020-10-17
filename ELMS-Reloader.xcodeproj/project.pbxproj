@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A045630253AD6CB00EC56A7 /* PreferencesViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A04562E253AD6CB00EC56A7 /* PreferencesViewControler.swift */; };
 		6A2384B32539E95C00620386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2384B22539E95C00620386 /* AppDelegate.swift */; };
 		6A2384B62539E95C00620386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384B42539E95C00620386 /* Main.storyboard */; };
 		6A2384B82539E95C00620386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2384B72539E95C00620386 /* ViewController.swift */; };
@@ -22,6 +23,10 @@
 		6A2384D62539E96100620386 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384D52539E96100620386 /* popup.html */; };
 		6A2384D82539E96100620386 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384D72539E96100620386 /* popup.css */; };
 		6A2384DA2539E96100620386 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384D92539E96100620386 /* popup.js */; };
+		6ABA9ADB2539FB8D006FB601 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA9ADD2539FB8D006FB601 /* Localizable.strings */; };
+		6ABA9AE42539FBC7006FB601 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA9AE62539FBC7006FB601 /* Localizable.strings */; };
+		6AC0AD5D253ADA77004A6D97 /* PreferencesWindowControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0AD5C253ADA77004A6D97 /* PreferencesWindowControler.swift */; };
+		6ACCF48D253B05C400D8DCDD /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACCF48F253B05C400D8DCDD /* Preferences.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A04562E253AD6CB00EC56A7 /* PreferencesViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewControler.swift; sourceTree = "<group>"; };
 		6A2384AE2539E95C00620386 /* ELMS-Reloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELMS-Reloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2384B12539E95C00620386 /* ELMS_Reloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ELMS_Reloader.entitlements; sourceTree = "<group>"; };
 		6A2384B22539E95C00620386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 		6A2384D92539E96100620386 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		6A2384DB2539E96100620386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2384DC2539E96100620386 /* ELMS_Reloader_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ELMS_Reloader_Extension.entitlements; sourceTree = "<group>"; };
+		6ABA9ACB2539F873006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		6ABA9ADC2539FB8D006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6ABA9AE52539FBC7006FB601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6AC0AD5C253ADA77004A6D97 /* PreferencesWindowControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowControler.swift; sourceTree = "<group>"; };
+		6ACCF48E253B05C400D8DCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
+		6ACCF491253B05D000D8DCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
+		6ACCF492253B05D400D8DCDD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Preferences.strings; sourceTree = "<group>"; };
+		6ACCF496253B061B00D8DCDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A045629253AD4F000EC56A7 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				6A04562E253AD6CB00EC56A7 /* PreferencesViewControler.swift */,
+				6ACCF48F253B05C400D8DCDD /* Preferences.storyboard */,
+				6AC0AD5C253ADA77004A6D97 /* PreferencesWindowControler.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		6A2384A52539E95C00620386 = {
 			isa = PBXGroup;
 			children = (
+				6A045629253AD4F000EC56A7 /* Preferences */,
 				6A2384B02539E95C00620386 /* ELMS-Reloader */,
 				6A2384C72539E96100620386 /* ELMS-Reloader Extension */,
 				6A2384C42539E96100620386 /* Frameworks */,
@@ -118,6 +143,8 @@
 				6A2384B72539E95C00620386 /* ViewController.swift */,
 				6A2384B92539E96100620386 /* Assets.xcassets */,
 				6A2384BB2539E96100620386 /* Info.plist */,
+				6ABA9ADD2539FB8D006FB601 /* Localizable.strings */,
+				6ABA9AE62539FBC7006FB601 /* Localizable.strings */,
 			);
 			path = "ELMS-Reloader";
 			sourceTree = "<group>";
@@ -219,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 6A2384A52539E95C00620386;
 			productRefGroup = 6A2384AF2539E95C00620386 /* Products */;
@@ -237,6 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A2384BA2539E96100620386 /* Assets.xcassets in Resources */,
+				6ABA9AE42539FBC7006FB601 /* Localizable.strings in Resources */,
+				6ABA9ADB2539FB8D006FB601 /* Localizable.strings in Resources */,
+				6ACCF48D253B05C400D8DCDD /* Preferences.storyboard in Resources */,
 				6A2384B62539E95C00620386 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A045630253AD6CB00EC56A7 /* PreferencesViewControler.swift in Sources */,
 				6A2384B82539E95C00620386 /* ViewController.swift in Sources */,
+				6AC0AD5D253ADA77004A6D97 /* PreferencesWindowControler.swift in Sources */,
 				6A2384B32539E95C00620386 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,8 +324,36 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A2384B52539E95C00620386 /* Base */,
+				6ABA9ACB2539F873006FB601 /* ja */,
+				6ACCF496253B061B00D8DCDD /* en */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6ABA9ADD2539FB8D006FB601 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ABA9ADC2539FB8D006FB601 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6ABA9AE62539FBC7006FB601 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ABA9AE52539FBC7006FB601 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6ACCF48F253B05C400D8DCDD /* Preferences.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ACCF48E253B05C400D8DCDD /* Base */,
+				6ACCF491253B05D000D8DCDD /* en */,
+				6ACCF492253B05D400D8DCDD /* ja */,
+			);
+			name = Preferences.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -363,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -416,8 +479,10 @@
 		6A2384E02539E96100620386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,8 +500,10 @@
 		6A2384E12539E96100620386 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,14 +525,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader/ELMS_Reloader.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -479,14 +549,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader/ELMS_Reloader.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

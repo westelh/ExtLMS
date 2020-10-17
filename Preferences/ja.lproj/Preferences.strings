@@ -1,0 +1,21 @@
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "Password"; ObjectID = "0uu-gI-Z4q"; */
+"0uu-gI-Z4q.placeholderString" = "パスワード";
+
+/* Class = "NSTextFieldCell"; title = "Input account information on ELMS"; ObjectID = "1z3-0O-Ldo"; */
+"1z3-0O-Ldo.title" = "ELMSのアカウント情報を入力";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "ERh-bf-LFs"; */
+"ERh-bf-LFs.title" = "Window";
+
+/* Class = "NSViewController"; title = "ID and Password"; ObjectID = "LDW-uK-53Y"; */
+"LDW-uK-53Y.title" = "IDとパスワード";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "RDo-0F-x5Z"; */
+"RDo-0F-x5Z.title" = "保存";
+
+/* Class = "NSViewController"; title = "About"; ObjectID = "XXR-uR-kEb"; */
+"XXR-uR-kEb.title" = "情報";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ID"; ObjectID = "b49-Ka-N7L"; */
+"b49-Ka-N7L.placeholderString" = "ID";

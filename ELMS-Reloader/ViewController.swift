@@ -12,7 +12,7 @@ import SafariServices.SFSafariExtensionManager
 let appName = "ELMS-Reloader"
 let extensionBundleIdentifier = "io.github.westelh.ELMS-Reloader-Extension"
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSWindowDelegate {
 
     @IBOutlet var appNameLabel: NSTextField!
     
@@ -27,9 +27,12 @@ class ViewController: NSViewController {
 
             DispatchQueue.main.async {
                 if (state.isEnabled) {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently on."
+                    self.appNameLabel.stringValue = NSLocalizedString("拡張機能は有効化されています", comment:"\(appName)'s extension is currently on.")
                 } else {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently off. You can turn it on in Safari Extensions preferences."
+                    self.appNameLabel.stringValue =
+                        NSLocalizedString(
+                            "ELMS Reloaderの拡張機能は無効にされています。Safari拡張機能設定から有効化してください。",
+                            comment: "\(appName)'s extension is currently off. You can turn it on in Safari Extensions preferences.")
                 }
             }
         }
@@ -47,5 +50,4 @@ class ViewController: NSViewController {
             }
         }
     }
-
 }
