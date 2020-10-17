@@ -1,25 +1,27 @@
-async function requestIdentifier(name, resolve) {
+function requestIdentifier(name, resolve) {
     const request = { requestType:"Identifier", "name":name}
-    browser.runtime.sendMessage(request).then(response => {
+    return browser.runtime.sendMessage(request).then(response => {
         console.log("Got a response", response)
         if(response?.error) console.error("Error from background:", response?.error)
         return response?.value
     }).then(resolve)
 }
 
-requestIdentifier("User", (value) => {
+const userPromise = requestIdentifier("User", (value) => {
     var pass_input = document.getElementById('username_input')
     if(pass_input) {
         pass_input.value = value
+        return value
     } else {
-        console.warn('Password input not found.')
+        console.warn('User input not found.')
     }
 });
 
-requestIdentifier("Pass", (value) => {
+const passPromise = requestIdentifier("Pass", (value) => {
     var pass_input = document.getElementById('password_input')
     if(pass_input) {
         pass_input.value = value
+        return value
     } else {
         console.warn('Password input not found.')
     }
@@ -30,9 +32,10 @@ if(false) {
     // セッション切れの場合リロード
 }
 
-
-var button = document.getElementById('login_button')
-if(button) {
+Promise.all([userPromise, passPromise]).then((user, pass) => {
+    var button = document.getElementById('login_button')
     var error_message = document.getElementById('error_message')
-    if(!error_message) button.click()
-}
+    if(!error_message) {
+        button?.click()
+    }
+});
