@@ -1,5 +1,5 @@
 function checkIfTimeout() {
-    const title = document.getElementsByTagName('h1')
+    const title = document.getElementsByTagName('h1')?.item(0)
     if(title?.innerHTML == "タイムアウト") {
         return true
     } else {
