@@ -10,6 +10,9 @@ function checkIfTimeout() {
 if(checkIfTimeout()) {
     location.href = "https://www.elms.hokudai.ac.jp/"
 } else {
+    let UserRequestValue = "UserRequest"
+    let PassRequestValue = "PassRequest"
+    
     function requestIdentifier(name, resolve) {
         const request = { requestType:"Identifier", "name":name}
         return browser.runtime.sendMessage(request).then(response => {
@@ -19,7 +22,7 @@ if(checkIfTimeout()) {
         }).then(resolve)
     }
 
-    const userPromise = requestIdentifier("User", (value) => {
+    const userPromise = requestIdentifier(UserRequestValue, (value) => {
         var pass_input = document.getElementById('username_input')
         if(pass_input) {
             pass_input.value = value
@@ -29,7 +32,7 @@ if(checkIfTimeout()) {
         }
     });
 
-    const passPromise = requestIdentifier("Pass", (value) => {
+    const passPromise = requestIdentifier(PassRequestValue, (value) => {
         var pass_input = document.getElementById('password_input')
         if(pass_input) {
             pass_input.value = value
