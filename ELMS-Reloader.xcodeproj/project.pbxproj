@@ -75,7 +75,6 @@
 		6A2384D92539E96100620386 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		6A2384DB2539E96100620386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2384DC2539E96100620386 /* ELMS_Reloader_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ELMS_Reloader_Extension.entitlements; sourceTree = "<group>"; };
-		6A57D077253EE0B8005EB243 /* SafariWebExtensionHandlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandlerTest.swift; sourceTree = "<group>"; };
 		6ABA9ACB2539F873006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		6ABA9ADC2539FB8D006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6ABA9AE52539FBC7006FB601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -162,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				6A2384C82539E96100620386 /* SafariWebExtensionHandler.swift */,
-				6A57D077253EE0B8005EB243 /* SafariWebExtensionHandlerTest.swift */,
 				6A2384DB2539E96100620386 /* Info.plist */,
 				6A2384DC2539E96100620386 /* ELMS_Reloader_Extension.entitlements */,
 				6A2384CA2539E96100620386 /* Resources */,
@@ -484,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 64;
+				CURRENT_PROJECT_VERSION = 84;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 64;
+				CURRENT_PROJECT_VERSION = 84;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,7 +532,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 81;
+				CURRENT_PROJECT_VERSION = 84;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -560,7 +558,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 81;
+				CURRENT_PROJECT_VERSION = 84;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
