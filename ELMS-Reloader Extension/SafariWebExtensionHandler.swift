@@ -16,7 +16,6 @@ let PassKeyInDefault = "Pass"
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     let defaults = UserDefaults(suiteName: "io.github.westelh.ELMS-Reloader.group")
-    
     // On MacOS10.15 with Xcode12.0.1, having a custom OSLog and logging with it leads app crash.
     // Instead of using custom log, use OSLog.default
     // let logger = OSLog(subsystem: "io.github.westelh.ELMS-Reloader", category: "SafariExtensionNativeContainer")
