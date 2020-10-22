@@ -28,14 +28,14 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     func respondToBrowserMessage(_ message: [AnyHashable:Any]) -> [AnyHashable:Any]? {
         os_log("Entered respondToBrowsermessage()", log: OSLog.default, type: .debug)
         // 定義済みメッセージタイプにマッチするメッセージ内容を走査
-        for (messageType, dwelegate) in messageTypesAndDelegates {
-            os_log("Message type enumeration started. now:%@", log: logger, type: .debug, messageType)
+        for (messageType, delegate) in messageTypesAndDelegates {
+//            os_log("Message type enumeration started. now:%@", log: logger, type: .debug, messageType)
             if let contentOfType = message[messageType] {
-                os_log("Received message has explicit type \"%@\". Passing to the delegate corresponds.", log: logger, type: .info, messageType)
+//                os_log("Received message has explicit type \"%@\". Passing to the delegate corresponds.", log: logger, type: .info, messageType)
                 return delegate(self)(contentOfType as? String ?? "")
             }
         }
-        os_log("Received message does not match any type of message defined.", log: logger, type: .error)
+//        os_log("Received message does not match any type of message defined.", log: logger, type: .error)
         return nil
     }
     
@@ -44,10 +44,10 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         
         var response: [AnyHashable:Any]?
         if let message = item.userInfo?[SFExtensionMessageKey] as? [AnyHashable:Any] {
-            os_log("Received message from browser.runtime.sendMesssage()", log: OSLog.default, type: .default)
+            // os_log("Received message from browser.runtime.sendMesssage()", log: OSLog.default, type: .default)
             response = respondToBrowserMessage(message)
         } else {
-            os_log("No data in the location expected for it to be in", log: OSLog.default, type: .error)
+//            os_log("No data in the location expected for it to be in", log: OSLog.default, type: .error)
         }
         
         context.completeRequest(returningItems: [response ?? [] ], completionHandler: nil)
@@ -62,7 +62,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             content = ["value":defaults?.string(forKey: PassKeyInDefault) ?? ""]; break
         default:
             content = ["error":String(format: "No operation for the request content:%@", requestContent)]
-            os_log("No operation for the request content:%{public}@", log: OSLog.default, type: .error, requestContent)
+//            os_log("No operation for the request content:%{public}@", log: OSLog.default, type: .error, requestContent)
         }
         return content
     }
