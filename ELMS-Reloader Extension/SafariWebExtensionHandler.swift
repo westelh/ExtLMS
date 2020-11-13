@@ -8,14 +8,25 @@
 import SafariServices
 import os
 
-let SFExtensionMessageKey = "message"
-let UserRequestValue = "UserRequest"
-let PassRequestValue = "PassRequest"
-let UserKeyInDefault = "User"
-let PassKeyInDefault = "Pass"
+class DefaultsProxy {
+    private let UserKeyInDefault = "User"
+    private let PassKeyInDefault = "Pass"
+    private let defaults = UserDefaults(suiteName: "io.github.westelh.ELMS-Reloader.group")
+
+    func readUserName() -> String? {
+        return defaults?.string(forKey: UserKeyInDefault)
+    }
+    
+    func readPassword() -> String? {
+        return defaults?.string(forKey: PassKeyInDefault)
+    }
+}
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
-    let defaults = UserDefaults(suiteName: "io.github.westelh.ELMS-Reloader.group")
+    let defaults = DefaultsProxy()
+    let SFExtensionMessageKey = "message"
+    let UserRequestValue = "UserRequest"
+    let PassRequestValue = "PassRequest"
     let logger = OSLog(subsystem: "io.github.westelh.ELMS-Reloader", category: "SafariExtensionNativeContainer")
     
 	func beginRequest(with context: NSExtensionContext) {
@@ -47,9 +58,9 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         var content = [AnyHashable:Any]()
         switch requestContent {
         case UserRequestValue:
-            content = ["value":defaults?.string(forKey: UserKeyInDefault) ?? ""]; break
+            content = ["value":defaults.readUserName() ?? ""]; break
         case PassRequestValue:
-            content = ["value":defaults?.string(forKey: PassKeyInDefault) ?? ""]; break
+            content = ["value":defaults.readPassword() ?? ""]; break
         default:
             content = ["error":String(format: "No operation for the request content:%@", requestContent)]
             os_log("No operation for the request content:%{public}@", log: logger, type: .error, requestContent)
