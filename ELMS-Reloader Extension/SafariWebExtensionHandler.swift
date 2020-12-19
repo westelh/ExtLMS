@@ -22,21 +22,22 @@ class DefaultsProxy {
     }
 }
 
+@available(OSXApplicationExtension 11.0, *)
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     let defaults = DefaultsProxy()
     let SFExtensionMessageKey = "message"
     let UserRequestValue = "UserRequest"
     let PassRequestValue = "PassRequest"
-    let logger = OSLog(subsystem: "io.github.westelh.ELMS-Reloader", category: "SafariExtensionNativeContainer")
+    let logger = Logger(subsystem: "io.github.westelh.ELMS-Reloader", category: "SafariExtensionNativeContainer")
     
 	func beginRequest(with context: NSExtensionContext) {
         let item = context.inputItems.first as! NSExtensionItem
         var response: [AnyHashable:Any]?
         if let message = item.userInfo?[SFExtensionMessageKey] as? [AnyHashable:Any] {
-            os_log("Received message from browser.runtime.sendMesssage()", log: logger, type: .default)
+            logger.log("Received message from browser.runtime.sendMesssage()")
             response = respondToBrowserMessage(message)
         } else {
-            os_log("No data in the location expected for it to be in", log: logger, type: .error)
+            logger.error("No data in the location where data is expected to be in")
         }
         
         let ret = NSExtensionItem()
@@ -46,11 +47,11 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     
     func respondToBrowserMessage(_ message: [AnyHashable:Any]) -> [AnyHashable:Any]? {
         if let requestContent = message["request"] as? String {
-            os_log("At subroutine switch, message content(%{public}@) is being passed to request process.", log: logger, type: .info, requestContent)
+            logger.info("At subroutine switch, message content \(requestContent) is being passed to request process")
             return meetRequest(requestContent: requestContent)
         }
 
-        os_log("Received message does not match any type of message defined.", log: logger, type: .error)
+        logger.error("Received message does not match any type of message defined")
         return nil
     }
     
@@ -63,7 +64,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             content = ["value":defaults.readPassword() ?? ""]; break
         default:
             content = ["error":String(format: "No operation for the request content:%@", requestContent)]
-            os_log("No operation for the request content:%{public}@", log: logger, type: .error, requestContent)
+            logger.error("No operation for the request content:\"\(requestContent)\"")
         }
         return content
     }
