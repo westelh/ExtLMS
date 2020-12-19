@@ -229,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					6A2384AD2539E95C00620386 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -481,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
 				DEVELOPMENT_TEAM = NZN98F68TM;
@@ -504,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 87;
 				DEVELOPMENT_TEAM = NZN98F68TM;
@@ -534,6 +536,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 87;
 				DEVELOPMENT_TEAM = NZN98F68TM;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,6 +563,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 87;
 				DEVELOPMENT_TEAM = NZN98F68TM;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
