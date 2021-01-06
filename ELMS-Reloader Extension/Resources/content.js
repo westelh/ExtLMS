@@ -8,7 +8,9 @@ function checkIfTimeout() {
 }
 
 if(checkIfTimeout()) {
-    location.href = "https://www.elms.hokudai.ac.jp/"
+    url = new URL(location.href)
+    query = url.search
+    location.href = "https://aidipigakunin.oicte.hokudai.ac.jp/pub/login.cgi" + query
 } else {
     let UserRequestValue = "UserRequest"
     let PassRequestValue = "PassRequest"
