@@ -483,7 +483,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
@@ -492,7 +492,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -508,7 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
@@ -517,7 +517,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -536,7 +536,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
@@ -544,7 +544,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,7 +563,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
@@ -571,7 +571,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
