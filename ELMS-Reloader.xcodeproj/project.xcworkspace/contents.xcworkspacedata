@@ -2,13 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/taisei/proj/Xcode/ELMS-Reloader/Preferences/Preferences.storyboard">
-   </FileRef>
-   <Group
-      location = "container:"
-      name = "New Group">
-   </Group>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
