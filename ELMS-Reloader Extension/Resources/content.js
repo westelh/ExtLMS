@@ -1,54 +1,62 @@
-function checkIfTimeout() {
-    const title = document.getElementsByTagName('h1')?.item(0)
-    if(title?.innerHTML == "タイムアウト") {
-        return true
-    } else {
-        return false
-    }
+function hasError() {
+    return document.getElementById('error_message')
 }
 
-if(checkIfTimeout()) {
-    url = new URL(location.href)
-    query = url.search
-    location.href = "https://aidipigakunin.oicte.hokudai.ac.jp/pub/login.cgi" + query
-} else {
+function makePostParamBack() {
+    const url = new URL(location.href)
+    return url.origin + url.searchParams.get('back')
+}
+
+function getSessId() {
+    return document.getElementById('sessid').value
+}
+
+function requestToBackground(target) {
+    const message = { requestType:"Identifier", name:target}
+    return browser.runtime.sendMessage(message).then(response => response.value)
+}
+
+function post(path, params, method='post') {
+  const form = document.createElement('form');
+  form.method = method;
+  form.action = path;
+
+  for (const key in params) {
+    if (params.hasOwnProperty(key)) {
+      const hiddenField = document.createElement('input');
+      hiddenField.type = 'hidden';
+      hiddenField.name = key;
+      hiddenField.value = params[key];
+
+      form.appendChild(hiddenField);
+    }
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+}
+
+function login(user, pass) {
+    var params = {
+        dummy:'',
+        username: user,
+        password: pass,
+        op: 'login',
+        back: makePostParamBack(),
+        sessid: getSessId()
+    }
+    post(location.origin + location.pathname, params)
+}
+
+if(!hasError()) {
     let UserRequestValue = "UserRequest"
     let PassRequestValue = "PassRequest"
     
-    function requestIdentifier(name, resolve) {
-        const request = { requestType:"Identifier", "name":name}
-        return browser.runtime.sendMessage(request).then(response => {
-            console.log("Got a response", response)
-            if(response?.error) console.error("Error from background:", response?.error)
-            return response?.value
-        }).then(resolve)
-    }
-
-    const userPromise = requestIdentifier(UserRequestValue, (value) => {
-        var pass_input = document.getElementById('username_input')
-        if(pass_input) {
-            pass_input.value = value
-            return value
-        } else {
-            console.warn('User input not found.')
-        }
-    });
-
-    const passPromise = requestIdentifier(PassRequestValue, (value) => {
-        var pass_input = document.getElementById('password_input')
-        if(pass_input) {
-            pass_input.value = value
-            return value
-        } else {
-            console.warn('Password input not found.')
-        }
-    });
-    
-    Promise.all([userPromise, passPromise]).then((user, pass) => {
-        var button = document.getElementById('login_button')
-        var error_message = document.getElementById('error_message')
-        if(!error_message) {
-            button?.click()
-        }
-    });
+    const userPromise = requestToBackground(UserRequestValue)
+    const passPromise = requestToBackground(PassRequestValue)
+    Promise.all([userPromise, passPromise]).then(results => {
+        const user = results[0]
+        const pass = results[1]
+        login(user, pass)
+    })
 }
