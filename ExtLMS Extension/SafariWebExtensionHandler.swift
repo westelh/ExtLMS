@@ -11,7 +11,7 @@ import os
 class DefaultsProxy {
     private let UserKeyInDefault = "User"
     private let PassKeyInDefault = "Pass"
-    private let defaults = UserDefaults(suiteName: "io.github.westelh.ExtLMS.group")
+    private let defaults = UserDefaults(suiteName: "net.luckyblackdog.ExtLMS.group")
 
     func readUserName() -> String? {
         return defaults?.string(forKey: UserKeyInDefault)
@@ -28,7 +28,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     let SFExtensionMessageKey = "message"
     let UserRequestValue = "UserRequest"
     let PassRequestValue = "PassRequest"
-    let logger = Logger(subsystem: "io.github.westelh.ExtLMS", category: "SafariExtensionNativeContainer")
+    let logger = Logger(subsystem: "net.luckyblackdog.ExtLMS", category: "SafariExtensionNativeContainer")
     
 	func beginRequest(with context: NSExtensionContext) {
         let item = context.inputItems.first as! NSExtensionItem

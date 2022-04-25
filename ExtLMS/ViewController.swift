@@ -10,7 +10,7 @@ import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
 let appName = "ExtLMS"
-let extensionBundleIdentifier = "io.github.westelh.ExtLMS-Extension"
+let extensionBundleIdentifier = "net.luckyblackdog.ExtLMS-Extension"
 
 class ViewController: NSViewController, NSWindowDelegate {
 

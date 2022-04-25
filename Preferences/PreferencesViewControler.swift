@@ -9,7 +9,7 @@ import Cocoa
 
 class PreferencesViewControler: NSViewController {
     
-    let defaults = UserDefaults(suiteName: "io.github.westelh.ExtLMS.group")
+    let defaults = UserDefaults(suiteName: "net.luckyblackdog.ExtLMS.group")
     var previousUser = ""
     var previousPass = ""
     
