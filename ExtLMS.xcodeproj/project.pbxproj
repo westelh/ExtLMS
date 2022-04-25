@@ -12,7 +12,7 @@
 		6A2384B62539E95C00620386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384B42539E95C00620386 /* Main.storyboard */; };
 		6A2384B82539E95C00620386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2384B72539E95C00620386 /* ViewController.swift */; };
 		6A2384BA2539E96100620386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384B92539E96100620386 /* Assets.xcassets */; };
-		6A2384C12539E96100620386 /* ELMS-Reloader Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A2384C02539E96100620386 /* ELMS-Reloader Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A2384C12539E96100620386 /* ExtLMS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A2384C02539E96100620386 /* ExtLMS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6A2384C62539E96100620386 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2384C52539E96100620386 /* Cocoa.framework */; };
 		6A2384C92539E96100620386 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2384C82539E96100620386 /* SafariWebExtensionHandler.swift */; };
 		6A2384CC2539E96100620386 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 6A2384CB2539E96100620386 /* _locales */; };
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6A2384C12539E96100620386 /* ELMS-Reloader Extension.appex in Embed App Extensions */,
+				6A2384C12539E96100620386 /* ExtLMS Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,14 +55,14 @@
 
 /* Begin PBXFileReference section */
 		6A04562E253AD6CB00EC56A7 /* PreferencesViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewControler.swift; sourceTree = "<group>"; };
-		6A2384AE2539E95C00620386 /* ELMS-Reloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELMS-Reloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A2384B12539E95C00620386 /* ELMS_Reloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ELMS_Reloader.entitlements; sourceTree = "<group>"; };
+		6A2384AE2539E95C00620386 /* ExtLMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtLMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2384B12539E95C00620386 /* ExtLMS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtLMS.entitlements; sourceTree = "<group>"; };
 		6A2384B22539E95C00620386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A2384B52539E95C00620386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A2384B72539E95C00620386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A2384B92539E96100620386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A2384BB2539E96100620386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A2384C02539E96100620386 /* ELMS-Reloader Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ELMS-Reloader Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2384C02539E96100620386 /* ExtLMS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ExtLMS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2384C52539E96100620386 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6A2384C82539E96100620386 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		6A2384CB2539E96100620386 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		6A2384D72539E96100620386 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		6A2384D92539E96100620386 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		6A2384DB2539E96100620386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A2384DC2539E96100620386 /* ELMS_Reloader_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ELMS_Reloader_Extension.entitlements; sourceTree = "<group>"; };
+		6A2384DC2539E96100620386 /* ExtLMS_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtLMS_Extension.entitlements; sourceTree = "<group>"; };
 		6ABA9ACB2539F873006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		6ABA9ADC2539FB8D006FB601 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6ABA9AE52539FBC7006FB601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				6A045629253AD4F000EC56A7 /* Preferences */,
-				6A2384B02539E95C00620386 /* ELMS-Reloader */,
-				6A2384C72539E96100620386 /* ELMS-Reloader Extension */,
+				6A2384B02539E95C00620386 /* ExtLMS */,
+				6A2384C72539E96100620386 /* ExtLMS Extension */,
 				6A2384C42539E96100620386 /* Frameworks */,
 				6A2384AF2539E95C00620386 /* Products */,
 			);
@@ -128,16 +128,16 @@
 		6A2384AF2539E95C00620386 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A2384AE2539E95C00620386 /* ELMS-Reloader.app */,
-				6A2384C02539E96100620386 /* ELMS-Reloader Extension.appex */,
+				6A2384AE2539E95C00620386 /* ExtLMS.app */,
+				6A2384C02539E96100620386 /* ExtLMS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A2384B02539E95C00620386 /* ELMS-Reloader */ = {
+		6A2384B02539E95C00620386 /* ExtLMS */ = {
 			isa = PBXGroup;
 			children = (
-				6A2384B12539E95C00620386 /* ELMS_Reloader.entitlements */,
+				6A2384B12539E95C00620386 /* ExtLMS.entitlements */,
 				6A2384B22539E95C00620386 /* AppDelegate.swift */,
 				6A2384B42539E95C00620386 /* Main.storyboard */,
 				6A2384B72539E95C00620386 /* ViewController.swift */,
@@ -146,7 +146,7 @@
 				6ABA9ADD2539FB8D006FB601 /* Localizable.strings */,
 				6ABA9AE62539FBC7006FB601 /* Localizable.strings */,
 			);
-			path = "ELMS-Reloader";
+			path = ExtLMS;
 			sourceTree = "<group>";
 		};
 		6A2384C42539E96100620386 /* Frameworks */ = {
@@ -157,15 +157,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A2384C72539E96100620386 /* ELMS-Reloader Extension */ = {
+		6A2384C72539E96100620386 /* ExtLMS Extension */ = {
 			isa = PBXGroup;
 			children = (
 				6A2384C82539E96100620386 /* SafariWebExtensionHandler.swift */,
 				6A2384DB2539E96100620386 /* Info.plist */,
-				6A2384DC2539E96100620386 /* ELMS_Reloader_Extension.entitlements */,
+				6A2384DC2539E96100620386 /* ExtLMS_Extension.entitlements */,
 				6A2384CA2539E96100620386 /* Resources */,
 			);
-			path = "ELMS-Reloader Extension";
+			path = "ExtLMS Extension";
 			sourceTree = "<group>";
 		};
 		6A2384CA2539E96100620386 /* Resources */ = {
@@ -186,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A2384AD2539E95C00620386 /* ELMS-Reloader */ = {
+		6A2384AD2539E95C00620386 /* ExtLMS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A2384E32539E96100620386 /* Build configuration list for PBXNativeTarget "ELMS-Reloader" */;
+			buildConfigurationList = 6A2384E32539E96100620386 /* Build configuration list for PBXNativeTarget "ExtLMS" */;
 			buildPhases = (
 				6A2384AA2539E95C00620386 /* Sources */,
 				6A2384AB2539E95C00620386 /* Frameworks */,
@@ -200,14 +200,14 @@
 			dependencies = (
 				6A2384C32539E96100620386 /* PBXTargetDependency */,
 			);
-			name = "ELMS-Reloader";
+			name = ExtLMS;
 			productName = "ELMS-Reloader";
-			productReference = 6A2384AE2539E95C00620386 /* ELMS-Reloader.app */;
+			productReference = 6A2384AE2539E95C00620386 /* ExtLMS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A2384BF2539E96100620386 /* ELMS-Reloader Extension */ = {
+		6A2384BF2539E96100620386 /* ExtLMS Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A2384DF2539E96100620386 /* Build configuration list for PBXNativeTarget "ELMS-Reloader Extension" */;
+			buildConfigurationList = 6A2384DF2539E96100620386 /* Build configuration list for PBXNativeTarget "ExtLMS Extension" */;
 			buildPhases = (
 				6A2384BC2539E96100620386 /* Sources */,
 				6A2384BD2539E96100620386 /* Frameworks */,
@@ -217,9 +217,9 @@
 			);
 			dependencies = (
 			);
-			name = "ELMS-Reloader Extension";
+			name = "ExtLMS Extension";
 			productName = "ELMS-Reloader Extension";
-			productReference = 6A2384C02539E96100620386 /* ELMS-Reloader Extension.appex */;
+			productReference = 6A2384C02539E96100620386 /* ExtLMS Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A2384A92539E95C00620386 /* Build configuration list for PBXProject "ELMS-Reloader" */;
+			buildConfigurationList = 6A2384A92539E95C00620386 /* Build configuration list for PBXProject "ExtLMS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,8 +253,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A2384AD2539E95C00620386 /* ELMS-Reloader */,
-				6A2384BF2539E96100620386 /* ELMS-Reloader Extension */,
+				6A2384AD2539E95C00620386 /* ExtLMS */,
+				6A2384BF2539E96100620386 /* ExtLMS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +314,7 @@
 /* Begin PBXTargetDependency section */
 		6A2384C32539E96100620386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A2384BF2539E96100620386 /* ELMS-Reloader Extension */;
+			target = 6A2384BF2539E96100620386 /* ExtLMS Extension */;
 			targetProxy = 6A2384C22539E96100620386 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,20 +480,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "ExtLMS Extension/ExtLMS_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 116;
+				CURRENT_PROJECT_VERSION = 119;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtLMS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ExtLMS-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -505,20 +505,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader Extension/ELMS_Reloader_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "ExtLMS Extension/ExtLMS_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 116;
+				CURRENT_PROJECT_VERSION = 119;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "ELMS-Reloader Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtLMS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ExtLMS-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -532,22 +532,23 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader/ELMS_Reloader.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ExtLMS/ExtLMS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 116;
+				CURRENT_PROJECT_VERSION = 119;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtLMS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.westelh.ExtLMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -559,22 +560,23 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "ELMS-Reloader/ELMS_Reloader.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ExtLMS/ExtLMS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 116;
+				CURRENT_PROJECT_VERSION = 119;
 				DEVELOPMENT_TEAM = NZN98F68TM;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "ELMS-Reloader/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ExtLMS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.westelh.ELMS-Reloader";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.westelh.ExtLMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -583,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A2384A92539E95C00620386 /* Build configuration list for PBXProject "ELMS-Reloader" */ = {
+		6A2384A92539E95C00620386 /* Build configuration list for PBXProject "ExtLMS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A2384DD2539E96100620386 /* Debug */,
@@ -592,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A2384DF2539E96100620386 /* Build configuration list for PBXNativeTarget "ELMS-Reloader Extension" */ = {
+		6A2384DF2539E96100620386 /* Build configuration list for PBXNativeTarget "ExtLMS Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A2384E02539E96100620386 /* Debug */,
@@ -601,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A2384E32539E96100620386 /* Build configuration list for PBXNativeTarget "ELMS-Reloader" */ = {
+		6A2384E32539E96100620386 /* Build configuration list for PBXNativeTarget "ExtLMS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A2384E42539E96100620386 /* Debug */,

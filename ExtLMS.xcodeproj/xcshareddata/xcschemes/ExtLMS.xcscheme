@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A2384AD2539E95C00620386"
-               BuildableName = "ELMS-Reloader.app"
-               BlueprintName = "ELMS-Reloader"
-               ReferencedContainer = "container:ELMS-Reloader.xcodeproj">
+               BuildableName = "ExtLMS.app"
+               BlueprintName = "ExtLMS"
+               ReferencedContainer = "container:ExtLMS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A2384AD2539E95C00620386"
-            BuildableName = "ELMS-Reloader.app"
-            BlueprintName = "ELMS-Reloader"
-            ReferencedContainer = "container:ELMS-Reloader.xcodeproj">
+            BuildableName = "ExtLMS.app"
+            BlueprintName = "ExtLMS"
+            ReferencedContainer = "container:ExtLMS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -75,16 +75,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A2384AD2539E95C00620386"
-            BuildableName = "ELMS-Reloader.app"
-            BlueprintName = "ELMS-Reloader"
-            ReferencedContainer = "container:ELMS-Reloader.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
