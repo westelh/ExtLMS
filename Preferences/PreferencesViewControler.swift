@@ -1,6 +1,6 @@
 //
 //  PreferencesViewControler.swift
-//  ELMS-Reloader
+//  ExtLMS
 //
 //  Created by 西海泰成 on 2020/10/17.
 //
@@ -9,7 +9,7 @@ import Cocoa
 
 class PreferencesViewControler: NSViewController {
     
-    let defaults = UserDefaults(suiteName: "io.github.westelh.ELMS-Reloader.group")
+    let defaults = UserDefaults(suiteName: "io.github.westelh.ExtLMS.group")
     var previousUser = ""
     var previousPass = ""
     

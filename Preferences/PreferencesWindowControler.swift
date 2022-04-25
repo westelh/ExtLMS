@@ -1,6 +1,6 @@
 //
 //  PreferencesWindowControler.swift
-//  ELMS-Reloader
+//  ExtLMS
 //
 //  Created by 西海泰成 on 2020/10/17.
 //

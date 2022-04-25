@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  ELMS-Reloader Extension
+//  ExtLMS Extension
 //
 //  Created by 西海泰成 on 2020/10/16.
 //
@@ -11,7 +11,7 @@ import os
 class DefaultsProxy {
     private let UserKeyInDefault = "User"
     private let PassKeyInDefault = "Pass"
-    private let defaults = UserDefaults(suiteName: "io.github.westelh.ELMS-Reloader.group")
+    private let defaults = UserDefaults(suiteName: "io.github.westelh.ExtLMS.group")
 
     func readUserName() -> String? {
         return defaults?.string(forKey: UserKeyInDefault)
@@ -28,7 +28,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     let SFExtensionMessageKey = "message"
     let UserRequestValue = "UserRequest"
     let PassRequestValue = "PassRequest"
-    let logger = Logger(subsystem: "io.github.westelh.ELMS-Reloader", category: "SafariExtensionNativeContainer")
+    let logger = Logger(subsystem: "io.github.westelh.ExtLMS", category: "SafariExtensionNativeContainer")
     
 	func beginRequest(with context: NSExtensionContext) {
         let item = context.inputItems.first as! NSExtensionItem

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ELMS-Reloader
+//  ExtLMS
 //
 //  Created by 西海泰成 on 2020/10/16.
 //
@@ -9,8 +9,8 @@ import Cocoa
 import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
-let appName = "ELMS-Reloader"
-let extensionBundleIdentifier = "io.github.westelh.ELMS-Reloader-Extension"
+let appName = "ExtLMS"
+let extensionBundleIdentifier = "io.github.westelh.ExtLMS-Extension"
 
 class ViewController: NSViewController, NSWindowDelegate {
 
@@ -31,7 +31,7 @@ class ViewController: NSViewController, NSWindowDelegate {
                 } else {
                     self.appNameLabel.stringValue =
                         NSLocalizedString(
-                            "ELMS Reloaderの拡張機能は無効にされています。Safari拡張機能設定から有効化してください。",
+                            "ExtLMSの拡張機能は無効にされています。Safari拡張機能設定から有効化してください。",
                             comment: "\(appName)'s extension is currently off. You can turn it on in Safari Extensions preferences.")
                 }
             }

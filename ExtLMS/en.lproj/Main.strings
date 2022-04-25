@@ -1,12 +1,12 @@
 
-/* Class = "NSMenuItem"; title = "ELMS-Reloader"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "ELMS-Reloader";
+/* Class = "NSMenuItem"; title = "ExtLMS"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "ExtLMS";
 
-/* Class = "NSMenuItem"; title = "Quit ELMS-Reloader"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Quit ELMS-Reloader";
+/* Class = "NSMenuItem"; title = "Quit ExtLMS"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit ExtLMS";
 
-/* Class = "NSMenuItem"; title = "About ELMS-Reloader"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "About ELMS-Reloader";
+/* Class = "NSMenuItem"; title = "About ExtLMS"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About ExtLMS";
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
@@ -14,17 +14,17 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Help";
 
-/* Class = "NSMenuItem"; title = "ELMS-Reloader Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "ELMS-Reloader Help";
+/* Class = "NSMenuItem"; title = "ExtLMS Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "ExtLMS Help";
 
-/* Class = "NSWindow"; title = "ELMS Reloader"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "ELMS Reloader";
+/* Class = "NSWindow"; title = "ExtLMS"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "ExtLMS";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
 
-/* Class = "NSMenuItem"; title = "Hide ELMS-Reloader"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "Hide ELMS-Reloader";
+/* Class = "NSMenuItem"; title = "Hide ExtLMS"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide ExtLMS";
 
 /* Class = "NSTextFieldCell"; title = "App Name's extension is currently off. You can turn it on in Safari Extensions preferences."; ObjectID = "S7v-7o-3vW"; */
 "S7v-7o-3vW.title" = "App Name's extension is currently off. You can turn it on in Safari Extensions preferences.";
@@ -41,8 +41,8 @@
 /* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "h1e-hQ-3Ft"; */
 "h1e-hQ-3Ft.title" = "Preferences";
 
-/* Class = "NSMenu"; title = "ELMS-Reloader"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "ELMS-Reloader";
+/* Class = "NSMenu"; title = "ExtLMS"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "ExtLMS";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Help";
